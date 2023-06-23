@@ -1,0 +1,600 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="../CSS/Main.css">
+            <link rel="stylesheet" href="../VelaSans/">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+            <title>Рекламное агентсво</title>
+            <script language="javascript">
+                startdate = new Date();
+                clockStart = startdate.getTime();
+                function initStopwatch() {
+                  var thisTime = new Date();
+                  return (thisTime.getTime() - clockStart)/1000;
+                }
+                function getSecs() {
+                  var tSecs = Math.round(initStopwatch());
+                  var iSecs = tSecs % 60;
+                  var iMins = Math.round((tSecs-30)/60);
+                  var sSecs ="" + ((iSecs > 9) ? iSecs : "0" + iSecs);
+                  var sMins ="" + ((iMins > 9) ? iMins : "0" + iMins);
+                  document.getElementById("timer-counter").innerHTML = sMins+":"+sSecs;
+                  setTimeout('getSecs()', 1000);
+                }
+                </script>
+                <script type="text/javascript">
+                    function openImageWindow(src) {
+                      var image = new Image();
+                      image.src = src;
+                      var width = image.width;
+                      var height = image.height;
+                      window.open(src,"Image","width=" + width + ",height=" + height);
+                    }
+                  </script>
+                  <script type="text/javascript">
+                    function go(addr) {
+                      window.open(addr,"MyWin", "menubar=yes,width=1024,height=768");
+                    }
+                  </script>
+                  <script>
+                    function showModal() {
+                        alert("Приветствую на моём сайте!");
+                    }
+                    setTimeout(showModal, 5000);
+                </script>
+                <script language = "javascript">
+                    arrColor = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
+                    function mouseOut() {
+                      for (i = 0; i < 13; i++)
+                        setTimeout ('document.blinkbutton.button.style.background = "#'+arrColor[15-i]+'0'+arrColor[15-i]+'FFF";', i * 50);
+                    }
+                    function mouseOver() {
+                      for (i = 0; i < 15; i++)
+                        setTimeout ('document.blinkbutton.button.style.background = "#'+arrColor[i]+'0'+arrColor[i]+'F31";', i * 50);
+                    }
+                    </script>
+                    <script type="text/javascript">
+                        function idd(id) { return document.getElementById(id); }
+                        function totop(){ return self.pageYOffset || (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop); }
+                        function fly () {
+                        var hei = document.getElementsByTagName("body")[0].offsetHeight-100;
+                        var wi = document.getElementsByTagName("body")[0].offsetWidth-100;
+                        idd("fly").style.transform="rotate("+(Math.random()*360)+"deg)";
+                        idd("fly").style.top=(Math.random()*hei)+"px";
+                        idd("fly").style.left=(Math.random()*wi)+"px";
+                        }
+                        function flyclick() { idd('fly').style.transition='99999s'; }
+                        idd("fly").style.transform="rotate("+(Math.random()*360)+"deg)";
+                        setInterval( function() {
+                        idd("fly").style.transform="rotate("+(Math.random()*360)+"deg)"; } , (Math.random()*60000));
+                </script>
+        </head>
+        <div class="go-top">▲</div>
+            
+        <header class="header">
+            <div class="header__container">
+            <div class="header_logo">
+                <img src="../IMG/Безымянный.png" alt="logo">
+                <p class="text_for_logo">agency</p>
+            </div>
+            <div class="header_links">
+                <a href="" class="header_link1" onclick="go('https://www.youtube.com/'); return false;">welcome@labi.agency</a>
+                <a href="" class="header_link1">+79213660432</a>
+                <img src="../IMG/Vector.png" alt="" class="img_logotip">
+                <a href="" class="header_link2">Заказать_звонок</a>
+            </div>
+            </div>
+        </header>
+        <body onLoad="getSecs()">
+        <div class="cover_component">
+        <div class="cover_component_main">
+            <div class="blurb_block">
+            <p class="first_text_blurb_block">Мы дополняем Вашу задачу нашим дизайном</p>
+            <p class="sec_text_blurd_block">Рекламно-производственная компания и комплексное рекламное агентство</p>
+            </div>
+            <div class="buttons_block">
+            <a href="#" class="first_link_blurb" >Оставить заявку</a>
+            <a href="#" class="sec_link_blurb">Рассчитать стоимость</a>
+            </div>
+        </div>
+            <div class="stocks_block">
+                <div class="stocks_title">
+                    <div class="stocks_title_img">
+                        <img src="../IMG/strelka.png" alt="" class="img_title">
+                        <p class="text_stocks">Акциииспецпредложения</p> 
+                    </div>
+                    <a href="#" class="link_for_stocks_title" >Показать ещё</a>  
+                </div>
+            </div>
+            <div class="stocks_body">
+                <a class="stocks_text_body" href="#">Сезон календарей</a>
+                <a class="stocks_text_body" href="#">Таблика в подарок</a>
+                <a class="stocks_text_body" href="#">Продукция для печати и рекламы</a>
+                <a class="stocks_text_body" href="#">Визуализация выставочного стенда</a>
+            </div>
+        </div>
+        <div class="stocks_blck_marq">
+            <div class="cover_block">
+                <div class="fiels_of_work">
+                    <a href="#" class="link_fiels">Типография</a>
+                    <a href="#" class="link_fiels">Выставки</a>
+                    <a href="#" class="link_fiels">Дизайн</a>
+                    <a href="#" class="link_fiels">Производство</a>
+                </div>
+            </div>
+            <div class="block_marq">
+                <marquee behavior="altentane" direction="" loop="infinite" >
+                    <img src="../IMG/img (1).png" alt="" class="marq">
+                    <img src="../IMG/img (2).png" alt="" class="marq">
+                    <img src="../IMG/img (3).png" alt="" class="marq">
+                    <img src="../IMG/img (4).png" alt="" class="marq">
+                    <img src="../IMG/img (5).png" alt="" class="marq">
+                    <img src="../IMG/img (6).png" alt="" class="marq">
+                    <img src="../IMG/img (7).png" alt="" class="marq">
+                    <img src="../IMG/img (8).png" alt="" class="marq">
+                    <img src="../IMG/img (9).png" alt="" class="marq">
+                    <img src="../IMG/img (10).png" alt="" class="marq">
+                    <img src="../IMG/img (11).png" alt="" class="marq">
+                </marquee>
+            </div>
+            <div class="sec_marq">
+                <marquee behavior="altentane" direction="right" class="mq" loop="infinite">
+                    <img src="../IMG/img (1).png" alt="" class="marq">
+                    <img src="../IMG/img (2).png" alt="" class="marq">
+                    <img src="../IMG/img (3).png" alt="" class="marq">
+                    <img src="../IMG/img (4).png" alt="" class="marq">
+                    <img src="../IMG/img (5).png" alt="" class="marq">
+                    <img src="../IMG/img (6).png" alt="" class="marq">
+                    <img src="../IMG/img (7).png" alt="" class="marq">
+                    <img src="../IMG/img (8).png" alt="" class="marq">
+                    <img src="../IMG/img (9).png" alt="" class="marq">
+                    <img src="../IMG/img (10).png" alt="" class="marq">
+                    <img src="../IMG/img (11).png" alt="" class="marq">
+                </marquee>
+            </div>
+        </div>
+        <div class="about_company">
+            <div class="about_company_mix">
+            <div class="title_blocke">
+                <div class="logo_text">
+                    <div class="logo_adventeges_company">
+                        <div class="logo_adventeges1">LA</div>
+                        <div class="logo_adventeges2">BI</div>
+                        </div>
+                    <div class="text_with_logo"> — значит «хорошо»</div>
+                </div>
+                <p class="text_about">Именно так мы делаем нашу работу. Качественно и ответственно</p>
+                <div class="about_company_sec_text">
+                <p class="sec_text_company">А ещё это искусный и умелый. В LABI мы считаем, что это достаточно важные качества для рекламно-производственной компании</p>
+                <p class="sec_text_company">И ещё это можно перевести, как удачный. Именно такой выбор вы сделаете, начав сотрудничество с LABI agency</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div class="numbers_block">
+                <div class="number_block">
+                    <div class="number_blocks_culum">
+                    <div class="number_block_sec">
+                        <img src="../IMG/strelka.png" alt="" class="img_number">
+                        <p class="text_number1">Опыт</p>
+                    </div>
+                    <div class="text_number_sec">
+                        <p class="text_number2">15+</p>
+                        <p class="text_number3">Более 15 лет опыта</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="number_block">
+                    <div class="number_blocks_culum">
+                    <div class="number_block_sec">
+                        <img src="../IMG/strelka.png" alt="" class="img_number">
+                        <p class="text_number1">Клинты</p>
+                    </div>
+                    <div class="text_number_sec">
+                        <p class="text_number2">680</p>
+                        <p class="text_number3">Сотни довольных клиентов</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="number_block">
+                    <div class="number_blocks_culum">
+                    <div class="number_block_sec">
+                        <img src="../IMG/strelka.png" alt="" class="img_number">
+                        <p class="text_number1">Опыт</p>
+                    </div>
+                    <div class="text_number_sec">
+                        <p class="text_number2">3127</p>
+                        <p class="text_number3">Тысячи реализованных проектов</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="number_block">
+                    <div class="number_blocks_culum">
+                    <div class="number_block_sec">
+                        <img src="../IMG/strelka.png" alt="" class="img_number">
+                        <p class="text_number1">Опыт</p>
+                    </div>
+                    <div class="text_number_sec">
+                        <p class="text_number2">2793</p>
+                        <p class="text_number3">Множество пунктов выдачи</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advanteges">
+        <div class="advanteges_block">
+            <div class="title_adventeges_block">
+                <div class="logo_title_adventeges">
+                    <div class="text_title_adventeges">С</div>
+                    <div class="logo_adventeges3">
+                    <div class="logo_adventeges1">LA</div>
+                    <div class="logo_adventeges2">BI</div>
+                    </div>
+                    <div class="text_title_adventeges">выгодно работать</div>
+                </div>  
+            </div>
+            <div class="advanteges_body">
+                <div class="advanteges_body_img">
+                    <img src="../IMG/Advantages.png" alt="" class="advanteges_img_for_body">
+                </div>
+                <div class="advanteges_body_section">
+                    <div class="advanteges_body_section_colum1">
+                        <div class="advanteges_body_section_page">
+                            <div class="advanteges_body_section_page_logo">
+                                <img src="../IMG/logo_for_page1.png" alt="" class="advanteges_body_golo_for_page1">
+                            </div>
+                            <div class="advanteges_body_section_page_title">
+                                    <img src="../IMG/strelka.png" alt="" class="img_adventeges_body_page_title">
+                                    <p class="text__adventeges_body_page_title">Комплесный подход</p>
+                            </div>
+                            <div class="advanteges_body_section_page_content">
+                                <p>Мы можем и любим решать комплексные задачи наших клиентов. От печати полиграфии или дизайна до масштабной рекламной кампании</p>
+                            </div>
+                        </div>
+                        <div class="advanteges_body_section_page">
+                            <div class="advanteges_body_section_page_logo">
+                                <img src="../IMG/logo_for_page2.png" alt="" class="advanteges_body_golo_for_page1">
+                            </div>
+                            <div class="advanteges_body_section_page_title">
+                                    <img src="../IMG/strelka.png" alt="" class="img_adventeges_body_page_title">
+                                    <p class="text__adventeges_body_page_title">Работаем по всей России</p>
+                            </div>
+                            <div class="advanteges_body_section_page_content">
+                                <p>У нас большой опыт работы в регионах. Налаженная сеть партнеров и подрядчиков по различным направлениям рекламы и производства. 2793 пунктов выдачи по РФ</p>
+                            </div>
+                        </div>
+                </div>
+                    <div class="advanteges_body_section_colum2">
+                        <div class="advanteges_body_section_page">
+                            <div class="advanteges_body_section_page_logo">
+                                <img src="../IMG/logo_for_page3.png" alt="" class="advanteges_body_golo_for_page1">
+                            </div>
+                            <div class="advanteges_body_section_page_title">
+                                    <img src="../IMG/strelka.png" alt="" class="img_adventeges_body_page_title">
+                                    <p class="text__adventeges_body_page_title">Соблюдаем сроки</p>
+                            </div>
+                            <div class="advanteges_body_section_page_content">
+                                <p>Мы понимаем как важно выдерживать заявленные сроки и предоставлять необходимую отчётность</p>
+                            </div>
+                        </div>
+                        <div class="advanteges_body_section_page">
+                            <div class="advanteges_body_section_page_logo">
+                                <img src="../IMG/logo_for_page4.png" alt="" class="advanteges_body_golo_for_page1">
+                            </div>
+                            <div class="advanteges_body_section_page_title">
+                                    <img src="../IMG/strelka.png" alt="" class="img_adventeges_body_page_title">
+                                    <p class="text__adventeges_body_page_title">Опыт работы более 15 лет</p>
+                            </div>
+                            <div class="advanteges_body_section_page_content">
+                                <p>LABI agency надежная компания с клиенториентированным сервисом и отработанными технологиями производства</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advanteges_body_section_buttons">
+                        <a href="#" class="first_link_blurb_adventeges">Оставить заявку</a>
+                        <a href="#" class="sec_link_blurb_adventeges">Рассчитать стоимость</a>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+            <div class="work_adventeges">
+                <div class="work_adventeges_title">
+                    <p class="work_adventeges_title_text">Как мы работаем</p>
+                </div>
+                <div class="work_adventeges_logs">
+                    <div class="work_adventeges_log">
+                        <img src="../IMG/Message_2.png" alt="" class="img_adventeges_work">
+                        <p class="work_adventeges_text">Вы отправляете заявку или звоните нам в офис</p>
+                    </div>
+                    <div class="work_adventeges_log">
+                        <img src="../IMG/calendar2.png" alt="" class="img_adventeges_work">
+                        <p class="work_adventeges_text">Оцениваем стоимость и сроки заказа</p>
+                    </div>
+                    <div class="work_adventeges_log">
+                        <img src="../IMG/payment.png" alt="" class="img_adventeges_work">
+                        <p class="work_adventeges_text">Вы совершаете оплату, мы ее принимаем</p>
+                    </div>
+                    <div class="work_adventeges_log">
+                        <img src="../IMG/draw.png" alt="" class="img_adventeges_work">
+                        <p class="work_adventeges_text">Разрабатываем и правим макеты</p>
+                    </div>
+                    <div class="work_adventeges_log">
+                        <img src="../IMG/Gears 1.png" alt="" class="img_adventeges_work">
+                        <p class="work_adventeges_text">Мы запускаем производство и создаем продукт</p>
+                    </div>
+                    <div class="work_adventeges_log">
+                        <img src="../IMG/delivery.png" alt="" class="img_adventeges_work">
+                        <p class="work_adventeges_text">Вы получаете заказ удобным способом</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gases_frame">
+                <div class="gases_frame_title">
+                    <p class="gases_frame_title_text">Примеры работ</p>
+                </div>
+                <div class="gases_frame_content">
+                    <div class="gases_frame_content_links">
+                        <a href="#" class="gases_frame_content_link">Типография</a>
+                        <a href="#" class="gases_frame_content_link">Выставки</a>
+                        <a href="#" class="gases_frame_content_link">Дизайн</a>
+                        <a href="#" class="gases_frame_content_link">Производство</a>
+                        <a href="#" class="gases_frame_content_link">Сувениры</a>
+                    </div>
+                    <div class="gases_frame_content_links_sec">
+                        <a href="#" class="gases_frame_content_sec_link">Наклейки</a>
+                        <a href="#" class="gases_frame_content_sec_link">Открытки и сертификаты</a>
+                        <a href="#" class="gases_frame_content_sec_link">Плакаты и афиши</a>
+                        <a href="#" class="gases_frame_content_sec_link">Дипломы и грамоты</a>
+                        <a href="#" class="gases_frame_content_sec_link">Календари</a>
+                        <a href="#" class="gases_frame_content_sec_link">Каталоги и буклеты</a>
+                        <a href="#" class="gases_frame_content_sec_link">Листовки</a>
+                        <a href="#" class="gases_frame_content_sec_link">Визитки</a>
+                    </div>
+                    <div class="gases_frame_content_imgs">
+                    <div class="gases_frame_content_imgs_culom1">
+                        <div class="adidas1">
+                            <img src="../IMG/adidas.png" alt="">
+                            <p class="gases_frame_content_img_title">Буклет “Adidas”</p>
+                        </div>
+                        <div class="adidas">
+                            <img src="../IMG/konvert.png" alt="">
+                            <p class="gases_frame_content_img_title">Конверт “Weiss”</p>
+                        </div>
+                    </div>
+                    <div class="gases_frame_content_imgs_culom1">
+                        <div class="adidas">
+                            <img src="../IMG/vizitki.png" alt="">
+                            <p class="gases_frame_content_img_title">Визитки “Very Good Creative Co.”</p>
+                        </div>
+                        <div class="adidas">
+                            <img src="../IMG/broshka.png" alt="">
+                            <p class="gases_frame_content_img_title">Брошюра “Change”</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="partners_block">
+                <div class="partners_blurb_block">
+                    <p class="partners_first_text_blurb_block">Нам доверяют</p>
+                    <p class="partners_sec_text_blurd_block">Мы помогли множеству клиентов воплотить их идеи в реальность</p>
+                </div>
+                <div class="partners_compans">
+                    <div class="partners_compans_colum1">
+                        <img src="../IMG/petro_prom_alianc.png" alt="" onclick = 'openImageWindow(this.src);'>
+                        <img src="../IMG/Ameli.png" alt="" onclick = 'openImageWindow(this.src);'>
+                        <img src="../IMG/biograd.png" alt="" onclick = 'openImageWindow(this.src);'>
+                        <img src="../IMG/minebea_intec.png" alt="" onclick = 'openImageWindow(this.src);'>
+                        <img src="../IMG/antarus.png" alt="" onclick = 'openImageWindow(this.src);'>
+                    </div>
+                    <div class="partners_compans_colum2">
+                        <img src="../IMG/peterberg_koncert.png" alt="">
+                        <img src="../IMG/ozornie_belki.png" alt="">
+                        <img src="../IMG/ArtEstate.png" alt="">
+                        <img src="../IMG/MBsaun.png" alt="">
+                        <img src="../IMG/bibi.png" alt="">
+                    </div>
+                    <div class="partners_compans_colum3">
+                        <img src="../IMG/obedov.png" alt="">
+                        <img src="../IMG/pbe.png" alt="">
+                        <img src="../IMG/1C.png" alt="">
+                        <img src="../IMG/Akira.png" alt="">
+                        <img src="../IMG/byball.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="contact_form">
+                <div class="contact_form_img">
+                    <img src="../IMG/ContactsandFormImg.png" alt=""  onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" onclick = 'openImageWindow(this.src);'>
+                    <script src="../JS/js.js"></script>
+                </div>
+            <div class="contct_form_regist">
+                      <p class="text_contact_form">Возникла идея? Свяжитесь с нами!</p>
+                <div class="contct_form_regist_first">
+                      <div class="text1_contact_form">
+                        <img src="../IMG/mobila.png" alt="" class="img_for_text">
+                        <p>+7-921-366-04-32</p>
+                      </div>
+                      <div class="text2_contact_form">
+                        <img src="../IMG/Message_light.png" alt="" class="img_for_text">
+                        <p>welcome@labi.agency</p>
+                      </div>
+                      <div class="text3_contact_form">
+                        <img src="../IMG/Pin_light.png" alt="" class="img_for_text">
+                        <p>г. Санкт-Петербург, Караваевская улица, 33к5</p>
+                      </div>  
+                </div>
+                    <div class="form_regist">
+                        <p class="text_contact_form">Оставьте заявку</p>
+                        <p class="text_contact_form1">Наш менеджер свяжется с вами в течение 30 минут</p>
+                    <div action="" class="action_form_contact">
+                            <input type="text" placeholder="Ваше имя" class="input1" >
+                            <input type="text" placeholder="Адресс почты" class="input1">
+                            <input type="text" placeholder="Номер телефона" class="input1" id="phone">
+                        <div class="buttons_regist">
+                            <button class="regist_button" >Оставтиь заявку</button>
+                            <p class="text_regist_button">Оставляя заявку, вы принимаете условия пользовательского соглашения</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <footer class="footer">
+                <div class="footer_container">
+                    <div class="footer_container_num1">
+                        <div class="footer_container_num1_row1">
+                         <div class="footer_container_num1_logo">
+                            <img src="../IMG/Logo1.png" alt="logo">
+                            <p class="text_for_logo">agency</p>
+                         </div>
+                         <div class="footer_container_num1_content_text">
+                            <div class="footer_container_num1_content_text1">
+                                Пн-Пт с 11:00 до 19:00
+                            </div>
+                            <div class="footer_container_num1_content_text2">
+                              <img src="../IMG/mobila.png" alt="" class="img_for_text">
+                              <p>+7-921-366-04-32</p>
+                            </div>
+                            <div class="footer_container_num1_content_text3">
+                              <img src="../IMG/Message_light.png" alt="" class="img_for_text">
+                              <p>welcome@labi.agency</p>
+                            </div>
+                            <div class="footer_container_num1_content_text4">
+                              <img src="../IMG/Pin_light.png" alt="" class="img_for_text">
+                              <p>г. Санкт-Петербург, Караваевская улица, 33к5</p>
+                            </div>  
+                        </div>
+                        </div>
+                        <div class="footer_container_num1_row2">
+                          <a href="">Главная</a>
+                          <a href="">Услуги</a>
+                          <a href="">Тех. требования</a>
+                          <a href="">О нас</a>
+                          <a href="">Вакансии</a>
+                          <a href="">Контакты</a>
+                        </div>
+                        <div class="footer_container_num1_row3">
+                            <p class="footer_container_num1_row3_text">Политика</p>
+                            <p class="footer_container_num1_row3_text">конфиденциальности</p>
+                            <p class="footer_container_num1_row3_text">© 2021 LABI.agency</p>
+                        </div>
+                    </div>
+                    <div class="footer_container_section">
+                        <div class="footer_container_section1">
+                            <div class="footer_container_num2">
+                                <div class="footer_container_num2_first_row">
+                                    <div>
+                                       <a class="footer_container_num2_first_row_zag">Типография</a>
+                                    </div>
+                                    <div class="footer_container_num2_first_row_content">
+                                      <a class="footer_container_num2_first_row_content_text">Наклейки</a>
+                                      <a class="footer_container_num2_first_row_content_text">Открытки и сертификаты</a>
+                                      <a class="footer_container_num2_first_row_content_text">Плакаты и афиши</a>
+                                      <a class="footer_container_num2_first_row_content_text">Дипломы и грамоты</a>
+                                      <a class="footer_container_num2_first_row_content_text">Календари</a>
+                                      <a class="footer_container_num2_first_row_content_text">Каталоги и буклеты</a>
+                                      <a class="footer_container_num2_first_row_content_text">Листовки</a>
+                                      <a class="footer_container_num2_first_row_content_text">Визитки</a>
+                                    </div>
+                                   </div>
+                                   <div class="footer_container_num2_first_row">
+                                    <div>
+                                       <a class="footer_container_num2_first_row_zag">Выставки</p>
+                                    </div>
+                                    <div class="footer_container_num2_first_row_content">
+                                      <a class="footer_container_num2_first_row_content_text">Указатели и буклетницы</a>
+                                      <a class="footer_container_num2_first_row_content_text">Промостойки и торговые островки</a>
+                                      <a class="footer_container_num2_first_row_content_text">Оформление мероприятий и выставок</a>
+                                      <a class="footer_container_num2_first_row_content_text">Выставочные стенды</a>
+                                      <a class="footer_container_num2_first_row_content_text">Аренда выставочного оборудования</a>
+                                      <a class="footer_container_num2_first_row_content_text">Стенды press wall, brand wall</a>
+                                      <a class="footer_container_num2_first_row_content_text">Мобильные стены (roll up и pop up)</a>
+                                    </div>
+                                   </div> 
+                                   <div class="footer_container_num2_first_row">
+                                    <div>
+                                       <a class="footer_container_num2_first_row_zag">Дизайн и Диджитал</a>
+                                    </div>
+                                    <div class="footer_container_num2_first_row_content">
+                                      <a class="footer_container_num2_first_row_content_text">Администрирование и поддержка сайтов</a>
+                                      <a class="footer_container_num2_first_row_content_text">СЕО-оптимизация</a>
+                                      <a class="footer_container_num2_first_row_content_text">Доработка сайта</a>
+                                      <a class="footer_container_num2_first_row_content_text">Интернет-магазины</a>
+                                      <a class="footer_container_num2_first_row_content_text">Контекстная реклама</a>
+                                      <a class="footer_container_num2_first_row_content_text">Баннеры (вэб)</a>
+                                      <a class="footer_container_num2_first_row_content_text">Создание сайтов</a>
+                                      <a class="footer_container_num2_first_row_content_text">Дизайн полиграфии</a>
+                                      <a class="footer_container_num2_first_row_content_text">Разработка логотипа и фирменного стиля</a>
+                                    </div>
+                                   </div>
+                            </div>
+                        </div>
+                        <div class="footer_container_section2">
+                            <div class="footer_container_num3">
+                                <div class="footer_container_num2_sec_row">
+                                    <div>
+                                       <a class="footer_container_num2_first_row_zag">Производство рекламы</a>
+                                    </div>
+                                    <div class="footer_container_num2_first_row_content">
+                                      <a class="footer_container_num2_first_row_content_text">Брендирование автотранспорта</a>
+                                      <a class="footer_container_num2_first_row_content_text">Оформление офисов и торговых точек</a>
+                                      <a class="footer_container_num2_first_row_content_text">Баннеры</a>
+                                      <a class="footer_container_num2_first_row_content_text">Брендирование контейнеров</a>
+                                      <a class="footer_container_num2_first_row_content_text">Информационные стенды</a>
+                                      <a class="footer_container_num2_first_row_content_text">Таблички</a>
+                                      <a class="footer_container_num2_first_row_content_text">Оформление витрин</a>
+                                      <a class="footer_container_num2_first_row_content_text">Объемные буквы и вывески</a>
+                                    </div>
+                                   </div>
+                                   <div class="footer_container_num2_sec_row">
+                                    <div>
+                                       <a class="footer_container_num2_first_row_zag">Сувенирная_продукция</a>
+                                    </div>
+                                    <div class="footer_container_num2_first_row_content">
+                                      <a class="footer_container_num2_first_row_content_text">Ланьярды и бирки</a>
+                                      <a class="footer_container_num2_first_row_content_text">Корпоративные подарки</a>
+                                      <a class="footer_container_num2_first_row_content_text">Награды</a>
+                                      <a class="footer_container_num2_first_row_content_text">Текстиль (футболки и кепки)</a>
+                                      <a class="footer_container_num2_first_row_content_text">Пакеты с логотипом</a>
+                                      <a class="footer_container_num2_first_row_content_text">Подарочные наборы</a>
+                                      <a class="footer_container_num2_first_row_content_text">Ежедневники и блокноты</a>
+                                    </div>
+                                   </div>
+                            
+                                   <div class="footer_container_num2_sec_row">
+                                    <div>
+                                       <a class="footer_container_num2_first_row_zag">BTL</a>
+                                    </div>
+                                    <div class="footer_container_num2_first_row_content">
+                                      <a class="footer_container_num2_first_row_content_text">Дорхенгеры (дверные крючки)</a>
+                                      <a class="footer_container_num2_first_row_content_text">Корпоративные мероприятия</a>
+                                      <a class="footer_container_num2_first_row_content_text">Церемонии открытия магазинов и офисов</a>
+                                      <a class="footer_container_num2_first_row_content_text">Безадресная рассылка по почтовым ящикам</a>
+                                      <a class="footer_container_num2_first_row_content_text">Тайный покупатель</a>
+                                      <a class="footer_container_num2_first_row_content_text">Ростовые куклы</a>
+                                      <a class="footer_container_num2_first_row_content_text">Дегустации</a>
+                                      <a class="footer_container_num2_first_row_content_text">Промо-акции (СПБ, Москва + регионы)</a>
+                                    </div>
+                                   </div>
+                            </div>
+                            
+
+                        </div>
+             
+                    </div>
+                </div>
+            </footer>
+            <span id='timer-counter' style='color:red;font-size:150%;font-weight:bold;'></span>
+            <script src="../JS/js.js"></script>
+            <a id="fly" onmouseover="fly();" href="javascript: flyclick();" onclick="this.onmouseover='';this.onclick='';" style="top: 75px; left: 30%; position: absolute; transition: all 2s ease 0s; transform: rotate(137.515deg);"><img onclick="javascript: src='fly2.png'" src="../IMG/Logo1.png"></a> 
+    </body>
+</html>
+
